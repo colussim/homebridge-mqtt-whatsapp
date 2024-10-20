@@ -1,0 +1,60 @@
+{
+  "pluginAlias": "MqttWhatsappPlugin",
+  "pluginType": "accessory",
+  "singular": false,
+  "schema": {
+    "properties": {
+      "accessories": {
+        "type": "array",
+        "title": "Capteurs MQTT",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Nom du capteur",
+              "type": "string",
+              "required": true
+            },
+            "server": {
+              "title": "Adresse du serveur MQTT",
+              "type": "string",
+              "required": true
+            },
+            "port": {
+              "title": "Port du serveur MQTT",
+              "type": "number",
+              "default": 1883
+            },
+            "user": {
+              "title": "Nom de l'utilisateur MQTT",
+              "type": "string"
+            },
+            "password": {
+              "title": "Mot de passe de l'utilisateur MQTT",
+              "type": "string"
+            },
+            "mqttTopic": {
+              "title": "Topic MQTT",
+              "type": "string",
+              "required": true
+            },
+            "apiKey": {
+              "title": "API Key de CallMeBot",
+              "type": "string",
+              "required": true
+            },
+            "telNumber": {
+              "title": "Numéro de téléphone WhatsApp",
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    },
+    "required": [
+      "accessories"
+    ]
+  }
+}
+

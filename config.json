@@ -1,0 +1,16 @@
+{
+  "accessories": [
+    {
+      "accessory": "MqttWhatsappAccessory",
+      "name": "MQTT Sensor 1",
+      "server": "mqtt://broker.hivemq.com",
+      "port": 1883,
+      "user": "mqttuser",
+      "password": "mqttpassword",
+      "mqttTopic": "sensor/presence",
+      "apiKey": "your-api-key",
+      "telNumber": "your-phone-number"
+    }
+  ]
+}
+
